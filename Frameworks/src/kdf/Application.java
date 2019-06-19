@@ -11,6 +11,7 @@ public class Application {
 	public void applicationLoginTest() throws IOException {
 		String[][] data = GenericMethods.getData("D:\\SelMay13\\TestData.xlsx", "Sheet2");
 		for(int i = 1;i<data.length;i++) {
+			//Code modified after enhancement in the application as part of Realeas1.1
 			switch(data[i][3]) {
 			case "openBrowser":
 				Methods.openBrowser();
